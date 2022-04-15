@@ -1,7 +1,4 @@
 import React from 'react'
-import htmlLogo from "../assets/logo_html.png"
-import cssLogo from "../assets/logo_css.png"
-import brushLogo from "../assets/logo_brush.png"
 import Card from '../components/Card'
 
 const Home = () => {
