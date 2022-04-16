@@ -65,7 +65,7 @@ body{
   padding: 4px;
   margin-right: 5px;
 }
-.cwd-subscribe-right button {
+.cwd-subscribe-right button{
   padding: 2px 20px;
   border: none;
   background-color: #E9412A;
@@ -79,6 +79,16 @@ body{
   background-color: white;
   font-size: 1rem;
   text-align: center;
+  height: 45vh;
+}
+.cwd-content-about{
+  display: flex;
+  padding: 30px;
+  padding-top: 20px;
+  background-color: white;
+  font-size: 1rem;
+  text-align: center;
+  height: 80vh;
 }   
 .cwd-content-left{
   margin: 20px;
@@ -111,6 +121,7 @@ body{
 .cwd-content img {
   width: 60px;
   margin-bottom: 10px;
+  cursor: pointer;
 
 }
 
@@ -126,6 +137,7 @@ body{
   display: flex;
   background-color: white;
   padding: 10px;
+  height: 80vh;
 
 }
 .cwd-services h4{
@@ -184,4 +196,31 @@ body{
 .cwd-footer img{
   margin: 5px;
   height: 30px;
+}
+.cwd-content-container{
+  display: flex;
+  padding: 30px;
+  padding-top: 20px;
+  background-color: white;
+  font-size: 1rem;
+  text-align: center;
+  height: 85vh;
+}
+.cwd-content-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.cwd-content-card button{
+  padding: 10px 20px;
+  border: none;
+  background-color: #E9412A;
+  border-radius: 3px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
 }

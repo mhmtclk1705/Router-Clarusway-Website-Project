@@ -17,7 +17,7 @@ const About = () => {
           <button>Subscribe</button>
         </div>
       </div>
-      <div className="cwd-content">
+      <div className="cwd-content-about">
         <div className="cwd-content-left">
           <div className="cwd-content-leftup">
             <h4>About Us</h4>

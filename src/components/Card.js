@@ -1,34 +1,20 @@
 import React from "react";
-import htmlLogo from "../assets/logo_html.png";
-import cssLogo from "../assets/logo_css.png";
-import brushLogo from "../assets/logo_brush.png";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Card = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const card = location.state.card;
+  console.log(card);
   return (
-    <div className="cwd-content">
-      <div className="cwd-content-html">
-        <img src={htmlLogo} alt="html" />
-        <h4>HTML5 Markup</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
-          impedit animi eaque quidem ducimus qui!
-        </p>
-      </div>
-      <div className="cwd-content-css">
-        <img src={cssLogo} alt="css" />
-        <h4>CSS3 Styling</h4>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-          neque maxime facilis omnis sapiente libero?
-        </p>
-      </div>
-      <div className="cwd-content-gd">
-        <img src={brushLogo} alt="graphic-design" />
-        <h4>Graphic Design</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nisi
-          quod dicta repellendus aspernatur fugit!
-        </p>
+    <div className="cwd-content-container">
+      <div className="cwd-content-card">
+        <div key={card.id} className={`cwd-content-${card.alt}`}>
+          <img style={{width:"200px"}} src={card.img} alt={card.alt} />
+          <h4>{card.title}</h4>
+          <p>{card.text}</p>
+        </div>
+      <button className="backtohome" onClick={()=> navigate(-1)}>Back to Home</button>
       </div>
     </div>
   );
